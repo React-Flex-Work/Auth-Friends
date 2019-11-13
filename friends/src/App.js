@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Login from './components/Login';
 import FriendsList from './components/FriendsList';
@@ -13,9 +13,9 @@ function App() {
     <Router>
       <div className="App">
         <h1>Hello Friends</h1>
-        <PrivateRoute exact path='/' component={FriendsList} />
         <Route path='/login' component={Login} />
         <Route component={Login} />
+        <PrivateRoute exact path='/' component={FriendsList} />
       </div>
     </Router>
   );
