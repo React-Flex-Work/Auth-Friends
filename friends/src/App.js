@@ -13,7 +13,7 @@ function App() {
     <Router>
       <div className="App">
         <h1>Hello Friends</h1>
-        <PrivateRoute exact path='/protected' component={FriendsList} />
+        <PrivateRoute exact path='/' component={FriendsList} />
         <Route path='/login' component={Login} />
         <Route component={Login} />
       </div>

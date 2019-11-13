@@ -13,7 +13,7 @@ const Login = props => {
         axiosWithAuth().post('/login', form)
             .then(res => {
                 localStorage.setItem('token', res.data.payload);
-                props.history.push('/protected');
+                props.history.push('/');
             })
             .catch(err => {
                 console.log(err);
