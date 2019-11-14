@@ -23,7 +23,7 @@ h1 {
   color: white;
   font-family: 'Righteous', serif;
   font-size: 8em; 
-  text-shadow: .03em .03em 0 hsla(230,40%,50%,1);
+  text-shadow: 0 10px 20px hsla(230,40%,50%,1);
   }
   
 .form {
