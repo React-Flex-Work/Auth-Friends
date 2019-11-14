@@ -12,9 +12,8 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <h1>Hello Friends</h1>
+        <h1 data-shadow='Hello Friends!'>Hello Friends!</h1>
         <Route path='/login' component={Login} />
-        <Route component={Login} />
         <PrivateRoute exact path='/' component={FriendsList} />
       </div>
     </Router>

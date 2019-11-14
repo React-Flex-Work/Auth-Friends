@@ -77,7 +77,7 @@ export default function FriendForm(props) {
                     onChange={handleChanges}
                 />
                 <button type='submit'>{props.editingFriend ? 'Submit Edit' : 'Add Friend'}</button>
-                <button onClick={closeEdit}>Cancel</button>
+                <button onClick={closeEdit}>Cancel Edit</button>
             </form>
         </div>
     );

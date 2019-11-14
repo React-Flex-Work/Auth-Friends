@@ -34,7 +34,7 @@ const FriendsList = () => {
     };
 
     return (
-        <div>
+        <div className='form'>
             <FriendForm
                 editingFriend={editingFriend}
                 setFriends={setFriends}
@@ -54,7 +54,6 @@ const FriendsList = () => {
                     </div>
                 );
             })}
-            <button className='update-button' onClick={fetchFriends}>UPDATE</button>
         </div>
     );
 }

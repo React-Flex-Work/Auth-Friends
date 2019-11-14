@@ -25,12 +25,14 @@ const Login = props => {
         <div>
             <form onSubmit={login}>
                 <input
+                    required
                     type='text'
                     name='username'
                     placeholder='UserName'
                     onChange={handleChanges}
                     value={form.username} />
                 <input
+                    required
                     type='password'
                     name='password'
                     placeholder='Password'
